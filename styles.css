@@ -35,3 +35,9 @@ h6 {
 .content {
   margin-top: 32px;
 }
+
+.found {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+}

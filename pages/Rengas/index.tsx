@@ -37,9 +37,13 @@ const Rengas = () => {
   return (
     <div className="page">
       <h1 className="title">renga</h1>
-      <h2 className="subtitle">find which movies match the 3 emojis</h2>
+      <h2 className="subtitle">find which movie matches the 3 emojis</h2>
+      <div className="found">
+        Found: {data.map(r => r.id).filter(id => found[id]).length}/
+        {data.length}
+      </div>
       <div className="content">
-        {data.slice(0, 50).map((renga, index) => (
+        {data.map((renga, index) => (
           <Renga
             key={index}
             renga={renga}
