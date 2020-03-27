@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import { MovieResult, Renga } from "../types";
 
 import styles from "./MovieAutocomplete.module.css";
+import { check } from "../utils/renga";
 
 const API_KEY = "ae9fe5055de5c1c32a0c4818ce4671f9";
 
@@ -26,7 +27,7 @@ const MovieAutocomplete = ({ renga, onTry }: Props) => {
     (result: MovieResult) => {
       setValue("");
       setResults([]);
-      if (result.id === renga.movieDBID) {
+      if (check(result, renga)) {
         onTry(true, result);
       } else {
         onTry(false, result);

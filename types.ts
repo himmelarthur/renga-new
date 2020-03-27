@@ -7,7 +7,7 @@ export interface MovieResult {
 export interface Renga {
   id: string;
   bricks: string;
-  movieDBID: number;
+  movieDBID: string;
 }
 
 export interface FoundRenga extends Renga {
