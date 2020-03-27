@@ -1,0 +1,23 @@
+.renga {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.bricks {
+  font-size: 2em;
+  margin-right: 16px;
+  letter-spacing: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.right {
+  width: 300px;
+}
+
+.title {
+  font-weight: 500;
+}
